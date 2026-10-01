@@ -1,0 +1,81 @@
+/* ____________ Variáveis ____________ */
+:root {
+    --fonte-titulo: 'Lovers Quarrel', cursive;
+    --fonte-corpo: 'Krub';
+    --fonte-texto-alternativo: 'Playwrite AR';
+    --font-weight-titulo: 100;
+    --cor-titulo: #685232ce;
+    --cor-texto: #8a785d;
+    --cor-texto-fraco: #e7dad1;
+    --cor-fundo1: #8a785dc9;
+    --cor-fundo2: #e7dad1;
+
+
+}
+
+/* ____________ Reset básico ____________ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo2);
+  color: var();
+  font-family: var();
+  line-height: 1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}   
+
+/* ____________ Títulos e tags ____________ */
+
+/* ____________ Botões ____________ */
+
+button {
+    border: none;
+    width: 20vw;
+    background-color: var(--cor-fundo1);
+    font-family: var(--fonte-texto-alternativo);
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    letter-spacing: 1.3px;
+    transition: 0.2s;
+    background-color: #8a785d8e;
+}
+
+h1 { 
+    font-family: var(--fonte-titulo);
+    font-size: 80px;
+    font-weight: var(--font-weight-titulo);
+    color: var(--cor-titulo);
+}
