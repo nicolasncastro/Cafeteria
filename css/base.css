@@ -22,6 +22,11 @@
     box-sizing: border-box;
 }
 
+/* Para o texto "Uma breve viagem no tempo" não crie scroll horizontal */
+body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
