@@ -1,14 +1,15 @@
 /* ____________ Variáveis ____________ */
 :root {
     --fonte-titulo: 'Lovers Quarrel', cursive;
-    --fonte-corpo: 'Krub';
+    --fonte-corpo: 'Alata', sans-serif;
     --fonte-texto-alternativo: 'Playwrite AR';
     --font-weight-titulo: 100;
-    --cor-titulo: #685232ce;
-    --cor-texto: #8a785d;
+    --cor-titulo: #fffffee3;
+    --cor-texto: rgba(255, 255, 255, 0.9);
     --cor-texto-fraco: #e7dad1;
-    --cor-fundo1: #8a785dc9;
-    --cor-fundo2: #e7dad1;
+    --cor-span: #2c1802d2;
+    --cor-fundo: #f7dcc8;
+    --cor-fundo2: #fff2e9af;
 
 
 }
@@ -25,13 +26,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--cor-fundo2);
-  color: var();
-  font-family: var();
-  line-height: 1;
-}
-
 img {
     max-width: 100%;
     display: block;
@@ -46,13 +40,69 @@ ul {
     list-style: none;
 }
 
+li {
+    font-family: var(--fonte-corpo);
+    font-size: 20px;
+}
+
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }   
 
 /* ____________ Títulos e tags ____________ */
+
+h1 { 
+    font-family: var(--fonte-titulo);
+    font-size: clamp(90px, 13vw, 13vw);
+    font-weight: 100;
+    color: var(--cor-titulo);
+}
+
+/* Sub title do hero */
+h2 {
+    font-family: var(--fonte-corpo);
+    font-size: clamp(14px, 1.4vw, 400px);
+    font-weight: 500;
+    color: var(--cor-texto);
+    line-height: 1.4;
+    text-align: right;
+}
+
+span {
+    color: var(--cor-span);
+    font-weight: 900;
+    font-size: clamp(15px, 1.5vw, 400px);
+}
+
+h3 {
+    font-family: var(--fonte-texto-alternativo);
+    font-size: clamp(20px, 2rem, 400px);
+    font-weight: 400;
+    color: var(--span);
+}
+
+h4 {
+    font-family: var(--fonte-texto-alternativo);
+    font-size: clamp(10px, 1.7rem, 300px);
+    font-weight: 300;
+    color: var(--span);
+}
+
+h5 {
+    font-family: var(--fonte-corpo);
+    font-size: clamp(7px, 1.1rem, 100px);
+    font-weight: 100;
+    color: var(--span);
+}
+
+p {
+    font-family: var(--fonte-corpo);
+    font-size: 1.2vw;
+    font-weight: 100;
+    color: var(--cor-span);
+}
 
 /* ____________ Botões ____________ */
 
@@ -73,9 +123,3 @@ button:hover {
     background-color: #8a785d8e;
 }
 
-h1 { 
-    font-family: var(--fonte-titulo);
-    font-size: 80px;
-    font-weight: var(--font-weight-titulo);
-    color: var(--cor-titulo);
-}

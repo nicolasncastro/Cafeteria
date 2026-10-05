@@ -1,0 +1,132 @@
+/* ____________ HISTÓRIA DO CAFÉ ____________ */
+
+.historia-cafe {
+    background-color: var(--cor-fundo2);
+    padding: 120px 0;
+    color: #333;
+}
+
+.titulo-historia {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 6rem;
+}
+
+.titulo-historia span {
+    font-family: var(--fonte-texto-alternativo);
+    font-size: 1rem;
+}
+
+.titulo-historia h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 4rem;
+    font-weight: var(--font-weight-titulo);
+    margin: 0.5rem 0;
+}
+
+.titulo-historia p {
+    font-family: var(--fonte-corpo);
+    color: #666;
+}
+
+
+/* ____________ LINHA DO TEMPO ____________ */
+
+.linha-do-tempo {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Linha vertical */
+
+.linha-do-tempo::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--cor-span);
+    transform: translateX(-50%);
+}
+
+
+/* ____________ EVENTOS ____________ */
+
+.evento {
+    width: 50%;
+    position: relative;
+    padding: 0 3rem 5rem;
+}
+
+.evento:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.evento:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+
+/* ____________ ANO ____________ */
+
+.ano {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    color: var(--cor-span);
+    margin-bottom: 0.5rem;
+}
+
+
+/* ____________ CONTEÚDO ____________ */
+
+.conteudo-evento {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.conteudo-evento h4 {
+    font-family: var(--fonte-corpo);
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.conteudo-evento p {
+    font-family: var(--fonte-corpo);
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* ____________ RESPONSIVIDADE ____________ */
+
+@media (max-width: 700px) {
+
+    .linha-do-tempo::before {
+        left: 15px;
+    }
+
+    .evento,
+    .evento:nth-child(odd),
+    .evento:nth-child(even) {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 3.5rem;
+        padding-right: 0;
+    }
+
+    .ano {
+        font-size: 2rem;
+    }
+
+    .conteudo-evento {
+        padding: 1.5rem;
+    }
+
+}

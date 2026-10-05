@@ -1,0 +1,24 @@
+.hero {
+    background: 
+    linear-gradient(rgba(54, 20, 6, 0.3), rgba(139, 113, 92, 0.3)),
+    url("/img/hero.png") center 70%/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    padding-top: 5vw;
+    
+    /* backdrop-filter: blur(5.2px); */
+}
+
+.span-hero {
+    color: #f1f0f0;
+    font-weight: 600;
+}
