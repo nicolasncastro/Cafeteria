@@ -4,7 +4,11 @@
     background-color: var(--cor-fundo2);
     padding-bottom: 120px;
     color: #333;
-    
+
+    background-image: url(/img/graos1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* overflow: hidden; */
 }
 
