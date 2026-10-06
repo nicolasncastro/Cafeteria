@@ -1,0 +1,26 @@
+/* .essence {
+    text-align: center;
+}
+
+.essence h4 {
+    font-size: 18px;
+    padding-top: 6rem;
+    text-align: center;
+} */
+
+.essence-content {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.img-xicara img {
+    width: 40vw;
+    position: relative;
+    left: -188px;
+}
+
+.texts-essence p {
+    text-align: right;
+}

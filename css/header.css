@@ -21,14 +21,6 @@ header ul {
     gap: 20px;
 }
 
-/* Logo */
-header h3 {
-    font-family: var(--fonte-titulo);
-    font-size: 40px;
-    color: inherit;
-    font-weight: 100;
-}
-
 header li {
     letter-spacing: 1px;
 }

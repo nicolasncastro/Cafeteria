@@ -2,7 +2,7 @@
 
 .historia-cafe {
     background-color: var(--cor-fundo2);
-    padding-bottom: 120px;
+    padding-bottom: 8rem;
     color: #333;
 
     background-image: url(/img/graos1.png);
@@ -15,25 +15,18 @@
 .titulo-historia {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto 6rem;
+    margin: 8rem auto;
 }
 
 .titulo-historia span {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: relative;
-    top: -20px;
+    top: -16px;
     z-index: 1;
     font-weight: var(--font-weight-titulo);
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     text-transform: uppercase;
-}
-
-.titulo-historia h3 {
-    font-family: var(--fonte-titulo);
-    font-size: 6rem;
-    font-weight: var(--font-weight-titulo);
-    margin: 6rem 0 0;
 }
 
 .titulo-historia p {
@@ -87,6 +80,7 @@
     transform: translateX(-50%);
 }
 
+/* sombra */
 .linha-do-tempo::after {
     content: '';
     position: absolute;
@@ -95,7 +89,7 @@
     width: 100vw;
 
     height: 10px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
 
 .linha-do-tempo.expandir::after {

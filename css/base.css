@@ -82,10 +82,10 @@ span {
 }
 
 h3 {
-    font-family: var(--fonte-texto-alternativo);
-    font-size: clamp(20px, 2rem, 400px);
-    font-weight: 400;
-    color: var(--span);
+    font-family: var(--fonte-titulo);
+    font-size: 6rem;
+    font-weight: var(--font-weight-titulo);
+    margin: 5rem 0 0;
 }
 
 h4 {
@@ -107,6 +107,14 @@ p {
     font-size: 1.2vw;
     font-weight: 100;
     color: var(--cor-span);
+}
+
+/* Logo */
+h6 {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+    color: inherit;
+    font-weight: 100;
 }
 
 /* ____________ Botões ____________ */
