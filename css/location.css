@@ -1,0 +1,16 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--cor-fundo);
+}
+
+.title-location {
+    text-align: center;
+}
+
+.location-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
