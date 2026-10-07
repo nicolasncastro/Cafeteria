@@ -1,23 +1,87 @@
 .hero {
-    background: 
-    /* linear-gradient(rgba(54, 20, 6, 0.3), rgba(139, 113, 92, 0.3)), */
-    url("/img/hero.png") center 70%/cover no-repeat;
     height: 100vh;
     width: 100%;
-    opacity: 0.85;
+    opacity: 0.9;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: -3%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 10%,
+            rgba(0, 0, 0, 0.30) 45%,
+            rgba(0, 0, 0, 0.85) 100%
+        ),
+        url("/img/hero.png") center 70% / cover no-repeat;
+
+    z-index: 0;
+
+    animation: zoomHero 10s ease-in-out infinite alternate;
+}
+
+@keyframes zoomHero {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.12);
+    }
 }
 
 .text {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     height: 100%;
     padding-top: 5vw;
-    backdrop-filter: blur(1.5px);
+    z-index: 2;
+    /* backdrop-filter: blur(1.5px); */
 }
 
 .span-hero {
     color: #f1f0f0;
     font-weight: 600;
+}
+
+/* Animações dos textos*/
+
+.hero .text h1 {
+    animation: aparecerTitulo 1.5s ease-out;
+}
+
+.hero .text h2 {
+    animation: aparecerTexto 2.4s ease-out;
+}
+
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

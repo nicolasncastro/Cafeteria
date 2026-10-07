@@ -18,28 +18,27 @@
     margin: 0rem auto 8rem;
 }
 
-.titulo-historia span {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    top: -16px;
-    z-index: 1;
-    font-weight: var(--font-weight-titulo);
-    letter-spacing: 6px;
-    text-transform: uppercase;
-}
-
 .titulo-historia p {
     font-family: var(--fonte-corpo);
     color: #666;
 }
 
 /* Uma breve viagem no tempo */
+.titulo-historia span {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+    top: -28px;
+    z-index: 1;
+    font-weight: var(--font-weight-titulo);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
 
 .titulo-historia > span {
     display: block;
     white-space: nowrap;
-    animation: passarTexto 12s linear infinite;
+    animation: passarTexto 18s linear infinite;
 }
 
 @keyframes passarTexto {
