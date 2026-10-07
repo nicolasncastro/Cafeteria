@@ -8,7 +8,8 @@
     --cor-texto: rgba(255, 255, 255, 0.9);
     --cor-texto-fraco: #e7dad1;
     --cor-span: #2c1802d2;
-    --cor-fundo: #f7dcc8;
+    --cor-fundo: rgb(255, 254, 254);
+    /* --cor-fundo: rgba(168, 164, 104, 0.195); */
     --cor-fundo2: #fff2e9af;
 
 

@@ -1,12 +1,6 @@
-/* .essence {
-    text-align: center;
+.essence {
+    background-color: var(--cor-fundo);
 }
-
-.essence h4 {
-    font-size: 18px;
-    padding-top: 6rem;
-    text-align: center;
-} */
 
 .essence-content {
     display: flex;

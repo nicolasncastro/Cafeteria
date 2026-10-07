@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    background-color: var(--cor-fundo2);
+    background-color: var(--cor-fundo);
     /* position: fixed;
     width: 100%;
     top: 0;

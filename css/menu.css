@@ -1,6 +1,6 @@
 .menu {
-    background-color: white;
-    /* padding: 150px 0 190px; */
+    background-color: var(--cor-fundo);
+    padding: 5rem 0 14rem;
 }
 
 .sessao-menu {
