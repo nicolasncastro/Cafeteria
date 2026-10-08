@@ -1,0 +1,23 @@
+footer {
+    padding-top: 1rem;
+    background-color: var(--cor-fundo);
+}
+
+.line {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.342);
+    opacity: 0.6;
+    width: 100%;
+    height: 1px;
+}
+
+.direitos-reservados {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
