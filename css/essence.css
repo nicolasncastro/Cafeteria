@@ -18,3 +18,30 @@
 .texts-essence p {
     text-align: right;
 }
+
+@media (max-width: 800px) {
+    .img-xicara img {
+        width: 50vw;
+        left: -70px;
+    }
+
+    .texts-essence h3 {
+        text-align: right;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 425px) {
+    .essence-content {
+        flex-direction: column;
+    }
+
+    .texts-essence p {
+        text-align: center;
+    }
+
+    .img-xicara img {
+        width: 100vw;
+        left: auto;
+    }
+}

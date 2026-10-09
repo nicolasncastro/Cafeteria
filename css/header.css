@@ -1,11 +1,6 @@
 .header {
     display: flex;
     background-color: var(--cor-fundo);
-    /* position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1; */
 }
 
 .header .container {
@@ -22,5 +17,58 @@ header ul {
 
 header li {
     letter-spacing: 1px;
+    font-size: clamp(17px, 1.1vw, 1.2vw);
 }
 
+
+/* Botão hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: var(--cor-span);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 425px) {
+    .header .container {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-header {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-fundo);
+        padding: 1.5rem;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu-header.ativo {
+        display: block;
+    }
+
+    .menu-header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

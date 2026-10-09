@@ -1,6 +1,6 @@
 .location {
     background-color: var(--cor-fundo);
-    padding: 100px 0;
+    padding: 4rem 0;
 }
 
 .principal {
@@ -11,10 +11,6 @@
 
 .title-location {
     text-align: center;
-}
-
-.title-location h3 {
-    font-size: 6rem;
 }
 
 /* GRID */
@@ -84,14 +80,18 @@
 
     .map {
         grid-column: auto;
-        grid-row: auto;
+        grid-row: 2;
     }
 
     .map iframe {
-        height: 350px;
+        height: 200px;
     }
 
     .midias {
         align-items: center;
+    }
+
+    .endereco {
+        justify-content: center;
     }
 }

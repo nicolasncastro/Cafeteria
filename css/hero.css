@@ -85,3 +85,59 @@
         transform: translateY(0);
     }
 }
+
+
+/* RESPONSIVIDADE DO HERO */
+
+
+/* CELULARES */
+@media screen and (max-width: 425px) {
+    .hero {
+        min-height: 550px;
+        height: 100svh;
+    }
+
+    .hero::before {
+        background-position: 58% center;
+    }
+
+    .text {
+        padding: 90px 1rem 25px;
+        align-items: center;
+    }
+
+    .hero .text h2 {
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+}
+
+/* CELULARES ESTREITOS */
+@media screen and (max-width: 375px) {
+    .text {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .hero .text h1 {
+        font-size: 4rem;
+    }
+
+    .hero .text h2 {
+        font-size: 0.7rem;
+    }
+    
+    .hero span {
+        font-size: 0.7rem;
+    }
+}
+
+/* REDUZ MOVIMENTO SE O USUÁRIO PREFERIR */
+@media (prefers-reduced-motion: reduce) {
+    .hero::before,
+    .hero .text h1,
+    .hero .text h2 {
+        animation: none;
+    }
+}

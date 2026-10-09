@@ -5,7 +5,7 @@
     padding-bottom: 8rem;
     color: #333;
 
-    background-image: url(/img/graos.png); 
+    /* background-image: url(/img/graos.png);  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 /* Uma breve viagem no tempo */
 .titulo-historia span {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(12px, 1.1vw, 1.3vw);
     position: relative;
     top: -35px;
     z-index: 1;
@@ -118,7 +118,7 @@
 
 .ano {
     font-family: var(--fonte-titulo);
-    font-size: 3.3rem;
+    font-size: clamp(2.2vw, 2.6vw, 2.8vw);
     color: var(--cor-span);
     margin-bottom: 0.5rem;
 }
@@ -135,15 +135,11 @@
 
 .conteudo-evento h4 {
     font-family: var(--fonte-corpo);
-    font-size: 1.7rem;
+    font-size: clamp(20px, 1.5vw, 1.7vw);
     margin-bottom: 0.8rem;
 }
 
-.conteudo-evento p {
-    font-family: var(--fonte-corpo);
-    line-height: 1.6;
-    color: #666;
-}
+/* ____________ BOTÃO ____________ */
 
 .historia-cafe button {
     margin: 30px auto 0;
@@ -152,6 +148,22 @@
 
 
 /* ____________ RESPONSIVIDADE ____________ */
+@media (min-width: 769px) and (max-width: 1919px) {
+    .titulo-historia > span {
+        animation: none;
+        transform: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .historia-cafe {
+        padding-bottom: 3rem;
+    }
+
+    .titulo-historia > span {
+        animation: none;
+    }
+}
 
 @media (max-width: 700px) {
 
@@ -177,4 +189,56 @@
         padding: 1.5rem;
     }
 
+    .titulo-historia {
+        margin: 0rem auto 4rem;
+    }
+
+    .historia-cafe {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .linha-do-tempo {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .linha-do-tempo::before {
+        display: none;
+    }
+
+    .linha-do-tempo::after {
+        width: 100%;
+    }
+
+    .evento,
+    .evento:nth-child(odd),
+    .evento:nth-child(even) {
+        width: 90%;
+        left: 18px;
+        text-align: left;
+        padding: 0 0 3rem;
+    }
+
+    .conteudo-evento {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.25rem;
+    }
+
+    .ano {
+        font-size: 1.7rem;
+    }
+
+    .titulo-historia span {
+        letter-spacing: 2px;
+    }
+
+    .conteudo-evento {
+        background-color: var(--cor-fundo2);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    }
 }

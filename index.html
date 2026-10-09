@@ -23,19 +23,28 @@
 
     <!-- ____________ HEADER ____________ -->
     <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <h6>Café & Cia</h6>
-                </div>
-
-                <nav class="menu-header">
-                    <ul>
-                        <li><a href="#menu">Populares</a></li>
-                        <li><a href="#location">Localização</a></li>
-                        <li><a href="#history">História</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div class="logo">
+                <h6>Café & Cia</h6>
             </div>
+
+            <button class="menu-toggle"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-header" id="menu-header">
+                <ul>
+                    <li><a href="#menu">Populares</a></li>
+                    <li><a href="#history">História</a></li>
+                    <li><a href="#location">Localização</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- ____________ SECTION HERO ____________ -->
@@ -237,7 +246,7 @@
         </section>
     </section>
 
-<!-- ____________ LOCALIZAÇÃO ____________ -->
+<!-- ____________ FOOTER ____________ -->
     <footer>
         <section class="container">
             <div class="line"></div>

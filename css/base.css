@@ -58,7 +58,7 @@ li {
 
 h1 { 
     font-family: var(--fonte-titulo);
-    font-size: clamp(90px, 13vw, 13vw);
+    font-size: clamp(90px, 11vw, 13vw);
     font-weight: 100;
     color: var(--cor-titulo);
 }
@@ -66,7 +66,7 @@ h1 {
 /* Sub title do hero */
 h2 {
     font-family: var(--fonte-corpo);
-    font-size: clamp(14px, 1.4vw, 400px);
+    font-size: clamp(14px, 1.3vw, 400px);
     font-weight: 500;
     color: var(--cor-texto);
     line-height: 1.4;
@@ -76,33 +76,35 @@ h2 {
 span {
     color: var(--cor-span);
     font-weight: 900;
-    font-size: clamp(15px, 1.5vw, 400px);
+    font-size: clamp(15px, 1.3vw, 400px);
 }
 
 h3 {
     font-family: var(--fonte-titulo);
-    font-size: 6rem;
+    font-size: clamp(70px, 5vw, 6vw);
     font-weight: var(--font-weight-titulo);
-    margin: 5rem 0 0;
+    margin: 2rem 0 0;
+    text-align: center;
+    line-height: 0.8;
 }
 
 h4 {
     font-family: var(--fonte-texto-alternativo);
-    font-size: clamp(10px, 1.7rem, 300px);
+    font-size: clamp(25px, 1.6vw, 1.6vw);
     font-weight: 300;
     color: var(--span);
 }
 
 h5 {
     font-family: var(--fonte-corpo);
-    font-size: clamp(7px, 1.1rem, 100px);
+    font-size: clamp(16px, 1vw, 1.1vw);
     font-weight: 100;
     color: var(--span);
 }
 
 p {
     font-family: var(--fonte-corpo);
-    font-size: 1.2vw;
+    font-size: clamp(15px, 1vw, 1.2vw);
     font-weight: 100;
     color: var(--cor-span);
 }
@@ -136,3 +138,18 @@ button:hover {
     transform: translateY(-1px) scale(1.05);
 }
 
+/* ____________ RESPONSIVIDADE ____________ */
+
+@media screen and (max-width: 800px) {
+    
+    button {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    button {
+        width: auto;
+    }
+}

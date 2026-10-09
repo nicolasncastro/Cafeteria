@@ -5,6 +5,10 @@ const galeriaSection = document.querySelector('.galeria-cafe');
 const galeria = document.querySelector('.galeria');
 const imagens = document.querySelectorAll('.galeria .imagem img');
 
+const menuToggle = document.querySelector('.menu-toggle');
+const menuHeader = document.querySelector('.menu-header');
+const linksMenu = document.querySelectorAll('.menu-header a');
+
 
 // BOTÃO "VER MAIS"
 
@@ -75,31 +79,23 @@ window.addEventListener('scroll', () => {
 
 });
 
-// __________________________
 
-// let scrollAtual = window.scrollY;
-// let scrollAlvo = window.scrollY;
 
-// window.addEventListener('wheel', (event) => {
-//     event.preventDefault();
 
-//     scrollAlvo += event.deltaY * 0.3;
+menuToggle.addEventListener('click', () => {
+    const aberto = menuHeader.classList.toggle('ativo');
 
-//     scrollAlvo = Math.max(
-//         0,
-//         Math.min(
-//             document.documentElement.scrollHeight - window.innerHeight,
-//             scrollAlvo
-//         )
-//     );
-// }, { passive: false });
+    menuToggle.setAttribute('aria-expanded', aberto);
+    menuToggle.setAttribute(
+        'aria-label',
+        aberto ? 'Fechar menu' : 'Abrir menu'
+    );
+});
 
-// function scrollSuave() {
-//     scrollAtual += (scrollAlvo - scrollAtual) * 0.08;
-
-//     window.scrollTo(0, scrollAtual);
-
-//     requestAnimationFrame(scrollSuave);
-// }
-
-// scrollSuave();
+linksMenu.forEach(link => {
+    link.addEventListener('click', () => {
+        menuHeader.classList.remove('ativo');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menu');
+    });
+});
